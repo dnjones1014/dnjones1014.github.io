@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+  <head>
+ <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111331476-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-111331476-1');
+</script>
+
+<title>CIS 152 Final</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css\index.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  #activities {
+    border: 1px solid black;
+    background-color: #fee7ce;
+    padding-top: 100px;
+    padding-right: 100px;
+    padding-bottom: 450px;
+    padding-left: 100px;
+  }
+</style>
+
+<style>
+    #contact {
+      border: 1px solid black;
+      background-color: #fee7ce;
+      padding-top: 80px;
+      padding-right: 100px;
+      padding-bottom: 100px;
+      padding-left: 100px;
+    }
+  </style>
+  </head>
+
+<body id="myPage">
+
+  <!-- Sidebar on click -->
+  <nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-xxlarge" style="display:none;z-index:2" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-display-topright w3-text-teal">Close
+      <i class="fa fa-remove"></i>
+    </a>
+    <a href="#" class="w3-bar-item w3-button">Link 1</a>
+    <a href="#" class="w3-bar-item w3-button">Link 2</a>
+    <a href="#" class="w3-bar-item w3-button">Link 3</a>
+    <a href="#" class="w3-bar-item w3-button">Link 4</a>
+    <a href="#" class="w3-bar-item w3-button">Link 5</a>
+  </nav>
+
+  <!-- Navbar -->
+  <div class="w3-top">
+    <div class="w3-bar w3-theme-d2 w3-left-align">
+      <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);"
+        onclick="openNav()">
+        <i class="fa fa-bars"></i>
+      </a>
+      <a href="#" class="w3-bar-item w3-button w3-teal">
+        <i class="fa fa-home w3-margin-right"></i>Home</a>
+      <a href="#board" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Board</a>
+      <a href="#activities" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Neighborhood Activities</a>
+      <a href="#phasemap" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Phase Map</a>
+      <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact</a>
+     
+      <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-teal" title="Search">
+        <i class="fa fa-search"></i>
+      </a>
+    </div>
+
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+      <a href="#board" class="w3-bar-item w3-button">Board</a>
+      <a href="#activities" class="w3-bar-item w3-button">Neighborhood Activities</a>
+      <a href="#phasemap" class="w3-bar-item w3-button">Phase Map</a>
+      <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+      <a href="#" class="w3-bar-item w3-button">Search</a>
+    </div>
+  </div>
+
+  <!-- Image Header -->
+  <div class="w3-display-container w3-animate-opacity">
+    <img src="img\loogo.jpg" alt="boat" style="width:100%;min-height:350px;max-height:600px;">
+    <div class="w3-container w3-display-bottomleft w3-margin-bottom">
+
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div id="id01" class="w3-modal">
+    <div class="w3-modal-content w3-card-4 w3-animate-top">
+      <header class="w3-container w3-teal w3-display-container">
+        <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-teal w3-display-topright">
+          <i class="fa fa-remove"></i>
+        </span>
+        <h4>Oh snap! We just showed you a modal..</h4>
+        <h5>Because we can
+          <i class="fa fa-smile-o"></i>
+        </h5>
+      </header>
+      <div class="w3-container">
+        <p>Cool huh? Ok, enough teasing around..</p>
+        <p>Go to our
+          <a class="w3-text-teal" href="/w3css/default.asp">W3.CSS Tutorial</a> to learn more!</p>
+      </div>
+      <footer class="w3-container w3-teal">
+        <p>Modal footer</p>
+      </footer>
+    </div>
+  </div>
+
+
+  <!-- Team Container -->
+  <div class="w3-container w3-padding-64 w3-center" id="board">
+    <h2>OUR TEAM</h2>
+    <p>Meet the Board of Directors:</p>
+
+    <div class="w3-row">
+      <br>
+
+      <div class="w3-quarter">
+        <img src="img\greg.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+        <h3>Greg Sopa</h3>
+        <li>
+          <a id="greg-pres" href="greg.html" data-target="pres">President</a>
+        </li>
+      </div>
+
+      <div class="w3-quarter">
+        <img src="img\pj.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+        <h3>P.J. Trautman</h3>
+        <li>
+          <a id="pj-vice" href="pj.html" data-target="vice">Vice President</a>
+        </li>
+      </div>
+
+      <div class="w3-quarter">
+        <img src="img\dan.jpeg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+        <h3>Dan Harmon</h3>
+        <li>
+          <a id="dan.tres" href="dan.html" data-target="tres">Treasurer</a>
+        </li>
+      </div>
+
+      <div class="w3-quarter">
+        <img src="img\kyle.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+        <h3>Kyle Kirchhoefer</h3>
+        <li>
+          <a id="kyle-sec" href="kyle.html" data-target="sec">Secretary</a>
+        </li>
+      </div>
+    </div>
+
+    <div class="w3-quarter">
+      <img src="img\brian.jpeg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+      <h3>Brian Kesler</h3>
+      <li>
+        <a id="brian-acc" href="brian.html" data-target="B-ACC">ACC</a>
+      </li>
+    </div>
+
+    <div class="w3-quarter">
+      <img src="img\mariann.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+      <h3>MariAnne Schmidt</h3>
+      <li>
+        <a id="mari-acc" href="mariann.html" data-target="M-acc">ACC</a>
+      </li>
+    </div>
+
+    <div class="w3-quarter">
+      <img src="img\tim.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+      <h3>Tim Yardley</h3>
+      <li>
+        <a id="tim-acc" href="tim.html" data-target="T-acc">ACC</a>
+      </li>
+    </div>
+
+  </div>
+  </div>
+
+
+
+  <!-- activities Row -->
+  <div id="activities">
+
+    <div class="w3-quarter">
+      <h2>Neighborhood Activities</h2>
+      <p>The Events Committee is responsible for organizing events for residents of Prairie Fields. Our goal is to put on family
+        friendly events as we are a family community. Events include but not limited to:
+      </p>
+    </div>
+
+    <div class="w3-quarter">
+      <div class="w3-card w3-white">
+        <img src="img\block.jpg" alt="block party" style="width:100%">
+        <div class="w3-container">
+          <h3>Block Parties</h3>
+          <h5>Loking to host a block party</h5>
+          <p>click link below</p>
+          <p>http://bit.ly/PFblockparty</p>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-quarter">
+      <div class="w3-card w3-white">
+        <img src="img\4th.jpg" alt="4th" style="width:100%">
+        <div class="w3-container">
+          <h3>4th of July Parade</h3>
+          <h5>Join your neighbors in celebrating</h5>
+          <p>Parade will depart at 9am</p>
+          <p>Meet at Prairie Fields</p>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-quarter">
+      <div class="w3-card w3-white">
+        <img src="img\hallo.jpg" alt="Monterosso" style="width:100%">
+        <div class="w3-container">
+          <h3>Halloween Parade</h3>
+          <h5>Calling all kids</h5>
+          <p>Food, Fun</p>
+          <p>and prizes for best costume</p>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Container -->
+  <div class="w3-container" style="position:relative">
+    <a onclick="w3_open()" class="w3-button w3-xlarge w3-circle w3-teal" style="position:absolute;top:-28px;right:24px">+</a>
+  </div>
+
+  <!-- Phase Row -->
+  <div class="w3-row-padding w3-center w3-padding-64" id="phasemap">
+    <h2>Phase Map</h2>
+    <p>See the Phase map below to find out what phase your house belongs to..</p>
+    <br>
+    <img src="img\phase map.jpg" alt="phasemap" style="width:40%">
+  </div>
+
+  <!-- Contact Container -->
+  <div id="contact">
+    <div class="w3-row">
+      <div class="w3-col m5">
+        <div class="w3-padding-16">
+          <span class="w3-xlarge w3-border-teal w3-bottombar">Contact the PFHOA Board of Directors</span>
+        </div>
+        <h3>Address</h3>
+        <p></p>
+        <p>
+          <i class="fa fa-map-marker w3-text-teal w3-xlarge"></i>  P.O. Box 478, Savoy, Il  61874</p>
+          <div><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d763.4437435201937!2d-88.24320607075039!3d40.05812242518386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880cd6adb692aca3%3A0xb02c53f14e8afa46!2s270-304+Prairie+Rose+Ln%2C+Savoy%2C+IL+61874!5e0!3m2!1sen!2sus!4v1513564874269" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+        <p>
+          <i class="fa fa-phone w3-text-teal w3-xlarge"></i>  (217) 689-1360</p>
+        <p>
+          <i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i>  board@prairiefieldshoa.com</p>
+      </div>
+      <div class="w3-col m7">
+        <form class="w3-container w3-card-4 w3-padding-16 w3-white" action="/action_page.php" target="_blank">
+          <div class="w3-section">
+            <label>Name</label>
+            <input class="w3-input" type="text" name="Name" required>
+          </div>
+          <div class="w3-section">
+            <label>Email</label>
+            <input class="w3-input" type="text" name="Email" required>
+          </div>
+          <div class="w3-section">
+            <label>Message</label>
+            <input class="w3-input" type="text" name="Message" required>
+          </div>
+          <input class="w3-check" type="checkbox" checked name="Like">
+          <label>I Like it!</label>
+          <button type="submit" class="w3-button w3-right w3-theme">Send</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
+    <h4>Follow Us</h4>
+    <a class="w3-button w3-large w3-teal" href="https://www.facebook.com/PFHOA" title="Facebook">
+      <i class="fa fa-facebook"></i>
+    </a>
+    
+    <a class="w3-button w3-large w3-teal" href="https://nextdoor.com/neighborhood/prairiefields--savoy--il/" title="NextDoor">
+      <i class="fa fa-globe"></i>
+    </a>
+    
+
+    <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
+      <span class="w3-text w3-padding w3-teal w3-hide-small">Go To Top</span>
+      <a class="w3-button w3-theme" href="#myPage">
+        <span class="w3-xlarge">
+          <i class="fa fa-chevron-circle-up"></i>
+        </span>
+      </a>
+    </div>
+  </footer>
+  
+  
+  <script>
+    // Script for side navigation
+    function w3_open() {
+      var x = document.getElementById("mySidebar");
+      x.style.width = "300px";
+      x.style.paddingTop = "10%";
+      x.style.display = "block";
+    }
+
+    // Close side navigation
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+    }
+
+    // Used to toggle the menu on smaller screens when clicking on the menu button
+    function openNav() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else {
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+  </script>
+
+</body>
+
+</html>
